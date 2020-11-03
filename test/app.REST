@@ -1,0 +1,58 @@
+GET http://localhost:5000/api/posts
+
+
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+      "tags": [
+        "enjoy",
+        "holidays",
+        "summer",
+        "freefromstress"
+      ],
+      "likes": 0,
+      "shares": 0,
+      "usename": "kellerad",
+      "title": "New york Times square",
+      "body": "This is the first on my account",
+      "image": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2016/05/03/1430/Hyatt-Times-Square-P033-Times-Square.jpg/Hyatt-Times-Square-P033-Times-Square.16x9.jpg?imwidth=1280",
+      "comments": [
+        {
+          "text": "Wonderful!!✨✨✨✨"
+        },
+        {
+          "text": "Awecome place ❤"
+        }
+      ]
+}
+
+###
+GET http://localhost:5000/api/products
+
+
+
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "name":"test product 1",
+    "categories":[
+        "cat1",
+        "cat2"
+    ],
+    "tags":[
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
+    "price":2000,
+    "quantity":23,
+    "isActive":true
+}
+
+###
+DELETE http://localhost:5000/api/posts/5f465fd5dd25a83e5c59006e
