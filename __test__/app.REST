@@ -1,0 +1,72 @@
+
+// get all users
+GET http://localhost:5000/api/users
+
+// login auth
+###
+POST http://localhost:5000/api/users/auth
+Content-Type: application/json
+
+{
+     "email":"test@test.com",
+     "password":"test" 
+}
+
+// confirm email
+###
+GET http://localhost:5000/api/users/confirmation
+
+
+// register new user
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "email":"test@gmail.com",
+    "password":"admin",
+    "firstName":"dan",
+    "lastName":"bill",
+    "mobileNo":9988080890,
+    "userType":2
+}
+
+###
+// update user status
+PUT http://localhost:5000/api/users/5fd11374b9f548180f1960c2
+Content-Type: application/json
+
+{
+    "status":false
+}
+
+//Property
+-----------------------------------------------------
+
+// get all properties
+###
+GET http://localhost:5000/api/property
+
+
+// add new property
+###
+POST http://localhost:5000/api/property
+Content-Type: application/json
+
+{
+    
+}
+
+// delete property
+###
+DELETE http://localhost:5000/api/property/5f465fd5dd25a83e5c59006e
+
+
+// update property
+###
+PUT http://localhost:5000/api/property
+Content-Type: application/json
+
+{
+
+}
