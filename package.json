@@ -1,20 +1,22 @@
 {
-	"name": "backend-crud-api-project",
-	"version": "1.0.0",
-	"description": "CRUD api with express mongo and nodejs",
-	"main": "server.js",
-	"scripts": {
-		"start": "node src/server.js",
-		"dev": "nodemon src/server.js"
-	},
-	"author": "Dhananjay",
-	"license": "MIT",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"dotenv": "^8.2.0",
-		"express": "^4.17.1",
-		"helmet": "^4.1.0",
-		"mongoose": "^5.10.0",
-		"morgan": "^1.10.0"
-	}
+  "name": "onestay-backend-api",
+  "version": "1.0.0",
+  "description": "Backend api with express mongo and nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "unknown",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.17"
+  }
 }
